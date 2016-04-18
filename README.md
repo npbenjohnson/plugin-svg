@@ -1,6 +1,6 @@
 # plugin-svg
 
-Svg loader for SystemJS's. Based on [plugin-text](https://github.com/systemjs/plugin-text). Works using the module loader's transform hook so that SVGs can be embedded using [https://github.com/systemjs/builder](SystemJS builder).
+SVG loader for SystemJS's. Based on [plugin-text](https://github.com/systemjs/plugin-text). Works using the module loader's transform hook so that SVGs can be embedded using [SystemJS builder](https://github.com/systemjs/builder).
 
 Install
 ---
@@ -26,6 +26,6 @@ Usage
 ```javascript
 var target = document.getElementById('target-div');
 System.import('./test.svg!').then(function(svg) {
-      target.appendChild(svg);
-    });
+  target.appendChild(svg);
+});
 ```
